@@ -20,7 +20,7 @@ python3 main.py
 ```
 ## Windows
 ### Compiled .exe file
-You can find a "main.exe" file under dist/main. There is a zip file of that folder in the releases
+You can find a "main.exe" file under dist/main. There is a zip file of that folder in the [releases](https://github.com/IlmastroStefanuzzo/py_cli_snake/releases/)
 ### Python interpreter
 Clone the repo to your system with GitHUb Desktop or downloading the zip file from here or whatever  
 Open the folder in the file explorer  
