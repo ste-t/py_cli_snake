@@ -2,7 +2,7 @@
 Snake, but you can run it directly from the command line! Compatible with Windows, Linux, MacOS and **Android**!
 
 # How to run it?
-## Linux, Android (with Termux) and MacOS
+## Linux, Android (with [Termux](https://termux.com/)) and MacOS
 #### If you don't have python 3 and git installed yet (if you're using Linux python probably is), just search online how to install them
 ```bash
 git clone https://github.com/IlmastroStefanuzzo/py_cli_snake
@@ -18,7 +18,7 @@ python3 main.py
 ```
 ## Android
 ### With QPython
-Download the repo on your phone, then just download the QPython app and use its GUI to launch main.py (the app comes with the dependencies already installed)
+Download the repo on your phone, then just [download the QPython app](https://play.google.com/store/apps/details?id=org.qpython.qpy3) and use its GUI to launch main.py (the app comes with the dependencies already installed)
 ### With other apps
 Other apps are probably compatible, but I haven't tried
 ## Windows
