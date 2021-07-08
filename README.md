@@ -36,4 +36,4 @@ python main.py
 ```
 
 # What about performances?
-Yes, it sucks on Windows lol. But it runs very smoothly on Linux and Android (and probably MacOS) :D
+Yes, it sucks on Windows lol. But it is *extremely smooth on Linux and Android* (and probably *MacOS*) :D
