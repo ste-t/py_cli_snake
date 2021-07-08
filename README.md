@@ -1,8 +1,6 @@
 # Cross-platform command line snake in Python
 Snake, but you can run it directly from the command line! Compatible with Windows, Linux and MacOS
 
-# What about performances?
-Yes, it sucks on Windows lol. But it runs very smoothly on Linux (and probably MacOS) :D
 # How to run it?
 ## Linux and MacOS
 #### If you don't have python 3 installed yet (if you're using Linux it probably is), just search online how to install it
@@ -31,3 +29,6 @@ pip install -r requirements.txt
 ```shell
 python main.py
 ```
+
+# What about performances?
+Yes, it sucks on Windows lol. But it runs very smoothly on Linux (and probably MacOS) :D
