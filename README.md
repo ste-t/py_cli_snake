@@ -16,7 +16,7 @@ pip3 install -r requirements.txt  # Use "pip" with Termux
 ```bash
 python3 main.py # Use "python" with Termux
 ```
-## Android
+## Android apps
 ### With QPython
 Download the repo on your phone, then just [download the QPython app](https://play.google.com/store/apps/details?id=org.qpython.qpy3) and use its GUI to launch main.py (the app comes with the dependencies already installed)
 ### With other apps
