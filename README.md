@@ -12,10 +12,14 @@ git clone https://github.com/IlmastroStefanuzzo/py_cli_snake
 cd py_cli_snake
 ```
 ```bash
-pip3 install -r requirements.txt  # Use "pip" with Termux
+pip3 install -r requirements.txt
+# Command's name (pip3) may vary depending on your platform and how you installed python and pip
+# Use "pip" with Termux if you installed python through pkg install python
 ```
 ```bash
-python3 main.py # Use "python" with Termux
+python3 main.py
+# Command's name (python3) may vary depending on your platform and how you installed python and pip
+# Use "python" with Termux if you installed python through pkg install python
 ```
 ## Android apps
 ### With QPython
