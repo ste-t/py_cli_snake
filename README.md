@@ -3,7 +3,7 @@
 Snake, but you can run it directly from the command line! Compatible with Windows, Linux, MacOS and **Android**!
 
 # How to run it?
-## Linux, Android (with [Termux](https://termux.com/){target="_blank"}) and MacOS
+## Linux, Android (with [Termux](https://termux.com/)) and MacOS
 #### If you don't have python 3 and git installed yet (if you're using Linux python probably is), just search online how to install them
 ```bash
 git clone https://github.com/IlmastroStefanuzzo/py_cli_snake
