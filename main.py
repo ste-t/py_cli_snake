@@ -1,5 +1,6 @@
 from __future__ import print_function
 import os
+import argparse
 if os.name == "nt":
     import msvcrt
 else:
@@ -10,6 +11,7 @@ else:
 import threading
 import time
 import random
+import maps
 import colorama
 colorama.init()
 
@@ -17,7 +19,7 @@ osName = os.name
 clearCommand = 'cls' if osName == 'nt' else 'clear'
 
 
-# Clear the screen (works both on windows and linux)
+# Clear the screen (works on both windows and linux)
 def clear():
     os.system(clearCommand)
 
@@ -46,6 +48,25 @@ gameMap = """
 #                                                          #
 ############################################################
 """
+maps_prompt = """Choose a map:
+0) Default
+1) Tall
+2) Tall/thin
+> """
+
+parser = argparse.ArgumentParser(description="Command line snake!")
+parser.add_argument("-m", "--map", action="store_const", const=1, metavar="", help="play in another map")
+
+args = parser.parse_args()
+if args.map:
+    maps_prompt_input = input(maps_prompt)
+    if maps_prompt_input == "" or 0:
+        pass
+    else:
+        if maps_prompt_input == 1:
+            gameMap = maps.map1
+        if maps_prompt_input == 2:
+            gameMap = maps.map2
 
 mapX = gameMap.split("\n")[1].__len__()  # Get the lenght of the map
 mapY = gameMap.split("\n").__len__() - 2  # Get the height of the map
@@ -234,6 +255,8 @@ apple = Apple("\u001b[31mX\u001b[0m")
 
 # Start the game
 clear()
+print("\u001b[1m\u001b[36mChange map using the -m flag\u001b[0m")
+print("\u001b[1me.g. python3 main.py -m\n\u001b[0m")
 print("Move with \u001b[36mWASD\u001b[0m")
 print(4)
 time.sleep(1)
