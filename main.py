@@ -1,6 +1,5 @@
 from __future__ import print_function
 import os
-import argparse
 if os.name == "nt":
     import msvcrt
 else:
@@ -48,22 +47,27 @@ gameMap = """
 #                                                          #
 ############################################################
 """
-maps_prompt = """Choose a map:
-0) Default
-1) Tall
-2) Tall/thin
-> """
 
-parser = argparse.ArgumentParser(description="Command line snake!")
-parser.add_argument("-m", "--map", action="store_const", const=1, metavar="", help="play in another map")
+# Scan the maps.py file
+def fetch_maps():
+    running = True
+    count = 1
+    output = ["0) Default"]
+    while running:
+        try:
+            exec("output.append(str(count) + \") \" + maps.map" + str(count) + "[0])")
+            count += 1
+        except:
+            running = False
+    return output
 
-args = parser.parse_args()
-if args.map:
-    maps_prompt_input = input(maps_prompt)
-    if maps_prompt_input == "1":
-        gameMap = maps.map1
-    if maps_prompt_input == "2":
-        gameMap = maps.map2
+# Get the user's input to choose a map
+print(*fetch_maps(), sep="\n")
+maps_prompt_input = input("> ")
+
+# Select the map according to the user's input
+if maps_prompt_input != 0 and maps_prompt_input.strip() != "":
+    exec("gameMap = maps.map" + maps_prompt_input + "[1]")
 
 mapX = gameMap.split("\n")[1].__len__()  # Get the lenght of the map
 mapY = gameMap.split("\n").__len__() - 2  # Get the height of the map
@@ -252,8 +256,6 @@ apple = Apple("\u001b[31mX\u001b[0m")
 
 # Start the game
 clear()
-print("\u001b[1m\u001b[36mChange map using the -m flag\u001b[0m")
-print("\u001b[1me.g. python3 main.py -m\n\u001b[0m")
 print("Move with \u001b[36mWASD\u001b[0m")
 print(4)
 time.sleep(1)
