@@ -2,6 +2,8 @@ from __future__ import print_function
 import os
 if os.name == "nt":
     import msvcrt
+    import colorama
+    colorama.init()
 else:
     import sys
     import select
@@ -11,8 +13,6 @@ import threading
 import time
 import random
 import maps
-import colorama
-colorama.init()
 
 osName = os.name
 clearCommand = 'cls' if osName == 'nt' else 'clear'
