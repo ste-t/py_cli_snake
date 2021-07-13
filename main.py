@@ -60,13 +60,10 @@ parser.add_argument("-m", "--map", action="store_const", const=1, metavar="", he
 args = parser.parse_args()
 if args.map:
     maps_prompt_input = input(maps_prompt)
-    if maps_prompt_input == "" or 0:
-        pass
-    else:
-        if maps_prompt_input == 1:
-            gameMap = maps.map1
-        if maps_prompt_input == 2:
-            gameMap = maps.map2
+    if maps_prompt_input == "1":
+        gameMap = maps.map1
+    if maps_prompt_input == "2":
+        gameMap = maps.map2
 
 mapX = gameMap.split("\n")[1].__len__()  # Get the lenght of the map
 mapY = gameMap.split("\n").__len__() - 2  # Get the height of the map
