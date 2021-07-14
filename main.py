@@ -57,7 +57,7 @@ def fetch_maps():
         try:
             exec("output.append(str(count) + \") \" + maps.map" + str(count) + "[0])")
             count += 1
-        except:
+        except AttributeError:
             running = False
     return output
 
