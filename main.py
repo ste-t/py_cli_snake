@@ -207,7 +207,7 @@ class Snake:
         self.render()
     ##################################################
 
-    # Update gameMapList so, later, we can display it
+    # Update gameMapList so, later, it can be displayed
     def render(self):
         for n, i in enumerate(gameMapList):
             if i == self.body:
