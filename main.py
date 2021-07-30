@@ -219,9 +219,6 @@ class Snake:
 # The apple class
 class Apple:
     def __init__(self, char):
-        global mapX
-        global mapY
-        global snake
         self.char = char
         self.x = 1
         self.y = 1
