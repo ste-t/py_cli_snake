@@ -67,7 +67,8 @@ maps_prompt_input = input("> ")
 
 # Select the map according to the user's input
 if maps_prompt_input != 0 and maps_prompt_input.strip() != "":
-    gampeMap = getattr(maps, f"map{maps_prompt_input}")[1]
+    global gampeMap
+    gameMap = getattr(maps, f"map{maps_prompt_input}")[1]
 
 mapX = gameMap.split("\n")[1].__len__()  # Get the lenght of the map
 mapY = gameMap.split("\n").__len__() - 2  # Get the height of the map
