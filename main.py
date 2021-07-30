@@ -1,6 +1,9 @@
 from __future__ import print_function
 import os
-if os.name == "nt":
+osName = os.name
+clearCommand = 'cls' if osName == 'nt' else 'clear'
+
+if osName == "nt":
     import msvcrt
     import colorama
     colorama.init()
@@ -13,9 +16,6 @@ import threading
 import time
 import random
 import maps
-
-osName = os.name
-clearCommand = 'cls' if osName == 'nt' else 'clear'
 
 
 # Clear the screen (works on both windows and linux)
@@ -80,7 +80,6 @@ gameMapList = list(gameMap)
 # Clear the screen and print the stuff contained in gameMapList
 def update_map():
     global gameMap
-    global gameMapList
 
     gameMap = ''.join(gameMapList)
     clear()
@@ -128,9 +127,6 @@ def input_listener():
 # The snake/player class
 class Snake:
     def __init__(self, x, y, head, body):
-        global mapX
-        global mapY
-        global apple
 
         self.going = "d"
         self.x = x
