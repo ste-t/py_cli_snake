@@ -36,5 +36,5 @@ pip install -r requirements.txt
 python main.py
 ```
 
-# What about performances?
+# What about performance?
 Yes, it sucks on Windows lol. But it is *extremely smooth on Linux and Android* (and probably *MacOS*) :D
