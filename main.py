@@ -69,7 +69,7 @@ maps_prompt_input = input("> ")
 if maps_prompt_input.strip() != "0" and maps_prompt_input.strip() != "":
     gameMap = getattr(maps, f"map{maps_prompt_input}")[1]
 
-mapX = len(gameMap.split("\n")[1])  # Get the lenght of the map
+mapX = len(gameMap.split("\n")[1])  # Get the length of the map
 mapY = len(gameMap.split("\n")) - 2  # Get the height of the map
 
 # Convert gameMap to a list so it can be manipulated
