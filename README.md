@@ -1,4 +1,4 @@
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/IlmastroStefanuzzo/py_cli_snake.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/IlmastroStefanuzzo/py_cli_snake/context:python) [![Total alerts](https://img.shields.io/lgtm/alerts/g/IlmastroStefanuzzo/py_cli_snake.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/IlmastroStefanuzzo/py_cli_snake/alerts/)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/ste-t/py_cli_snake.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/IlmastroStefanuzzo/py_cli_snake/context:python) [![Total alerts](https://img.shields.io/lgtm/alerts/g/IlmastroStefanuzzo/py_cli_snake.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/IlmastroStefanuzzo/py_cli_snake/alerts/)
 
 # Cross-platform command line snake in Python
 Snake, but you can run it directly from the command line! Compatible with Windows, Linux, MacOS and **Android**!
@@ -7,7 +7,7 @@ Snake, but you can run it directly from the command line! Compatible with Window
 ## Linux, Android (with [Termux](https://termux.com/)) and MacOS
 #### If you don't have python 3 and git installed yet (if you're using Linux python probably is), just search online how to install them
 ```bash
-git clone https://github.com/IlmastroStefanuzzo/py_cli_snake
+git clone https://github.com/ste-t/py_cli_snake
 ```
 ```bash
 cd py_cli_snake
